@@ -32,13 +32,15 @@ a{color:var(--teal-d)}
 .top{position:sticky;top:0;z-index:30;background:rgba(250,248,242,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
 .top .wrap{display:flex;align-items:center;gap:14px;height:62px}
 .logo{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink);font-family:var(--serif);font-weight:700;font-size:20px;letter-spacing:.02em;white-space:nowrap;background:none;border:0;cursor:pointer;padding:4px}
-.logo svg{width:34px;height:34px}
+.logo svg,
+.logo img.gi{width:34px;height:34px}
 .nav{display:flex;gap:4px;margin-left:auto;align-items:center}
 .nav button{background:none;border:0;padding:8px 12px;border-radius:999px;cursor:pointer;font-weight:700;font-size:15px;color:var(--ink2)}
 .nav button:hover{background:var(--mint);color:var(--ink)}
 .nav button[aria-current="page"]{background:var(--mint);color:var(--teal-dd)}
 .coinpill{display:flex;align-items:center;gap:7px;background:#fff;border:1px solid #EFE3BE;border-radius:999px;padding:5px 13px 5px 6px;font-weight:700;box-shadow:var(--sh);cursor:pointer}
-.coinpill svg{width:26px;height:26px}
+.coinpill svg,
+.coinpill img.gi{width:26px;height:26px}
 .coinpill.bump{animation:bump .5s ease}
 @keyframes bump{40%{transform:scale(1.12)}}
 @media (max-width:720px){
@@ -71,7 +73,8 @@ a{color:var(--teal-d)}
 .meta span{background:#fff;border:1px solid var(--line);padding:6px 14px;border-radius:999px;font-weight:700;font-size:14.5px;color:var(--ink2)}
 .cta{display:flex;flex-wrap:wrap;gap:12px}
 .heroart{position:relative;background:radial-gradient(ellipse at 50% 40%,#fff 0%,var(--mint) 70%);border-radius:40px;padding:18px 10px 10px;box-shadow:var(--sh)}
-.heroart svg.body{width:100%;max-height:560px;display:block}
+.heroart svg.body,
+.heroart img.gi.body{width:100%;max-height:560px;display:block}
 .legend{display:flex;flex-wrap:wrap;gap:6px;justify-content:center;padding:6px 6px 8px}
 .legend button{border:1px solid var(--line);background:#fff;border-radius:999px;padding:5px 11px 5px 8px;font-size:13.5px;font-weight:700;cursor:pointer;display:flex;align-items:center;gap:6px}
 .legend button i{width:11px;height:11px;border-radius:50%;display:inline-block}
@@ -86,7 +89,8 @@ a{color:var(--teal-d)}
 .stat{background:#fff;border-radius:var(--r);padding:16px 18px;box-shadow:var(--sh);display:flex;gap:14px;align-items:center}
 .stat b{font-family:var(--serif);font-size:30px;line-height:1}
 .stat small{display:block;color:var(--ink2);font-size:14px}
-.stat svg{width:42px;height:42px;flex:none}
+.stat svg,
+.stat img.gi{width:42px;height:42px;flex:none}
 @media (max-width:640px){.strip{grid-template-columns:1fr}}
 
 /* chapter map */
@@ -101,7 +105,8 @@ a{color:var(--teal-d)}
 .lcard{position:relative;text-align:left;background:#fff;border:1px solid transparent;border-radius:var(--r2);padding:16px;box-shadow:var(--sh);cursor:pointer;display:flex;flex-direction:column;gap:6px;transition:transform .2s,box-shadow .2s,border-color .2s;min-height:228px}
 .lcard:hover{transform:translateY(-3px);box-shadow:var(--sh2);border-color:#CBE7DF}
 .lcard .ill{height:104px;border-radius:16px;display:grid;place-items:center;margin-bottom:6px}
-.lcard .ill svg{height:88px;width:auto}
+.lcard .ill svg,
+.lcard .ill img.gi{height:88px;width:auto}
 .lcard .day{font-size:12.5px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--teal-d)}
 .lcard h4{font-size:19px;margin:0}
 .lcard .foot{margin-top:auto;display:flex;justify-content:space-between;align-items:center;color:var(--ink2);font-size:14px;font-weight:700}
@@ -131,7 +136,8 @@ a{color:var(--teal-d)}
 @keyframes fadeup{from{opacity:0;transform:translateY(8px)}}
 .stage h2{font-size:clamp(24px,3vw,32px)}
 .stagetag{display:inline-flex;align-items:center;gap:8px;font-weight:700;font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--teal-d);margin-bottom:8px}
-.stagetag svg{width:22px;height:22px}
+.stagetag svg,
+.stagetag img.gi{width:22px;height:22px}
 .stagetime{color:var(--ink2);font-weight:400;letter-spacing:0;text-transform:none}
 .lfoot{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-top:18px;flex-wrap:wrap}
 .lfoot .note{color:var(--ink2);font-size:14.5px;flex:1;text-align:center;min-width:160px}
@@ -146,13 +152,15 @@ a{color:var(--teal-d)}
 .reveal p.key{border-left-color:var(--teal)}
 .reveal p strong{color:var(--teal-dd)}
 .hook{background:var(--blue);border-radius:18px;padding:14px 18px;font-family:var(--serif);font-size:20px;margin-bottom:16px;display:flex;gap:12px;align-items:center}
-.hook svg{width:34px;height:34px;flex:none}
+.hook svg,
+.hook img.gi{width:34px;height:34px;flex:none}
 .callout{background:#FFF7E3;border-radius:16px;padding:12px 16px;font-size:15.5px;margin:12px 0;border:1px solid #F4E2AE}
 .callout b{color:#7A5A0D}
 
 /* visual panels */
 .panel{background:var(--cream);border-radius:22px;padding:14px;position:relative}
-.panel svg{display:block;width:100%;height:auto}
+.panel svg,
+.panel img.gi{display:block;width:100%;height:auto}
 .panel .cap{font-size:14.5px;color:var(--ink2);text-align:center;margin-top:6px}
 .chips{display:flex;flex-wrap:wrap;gap:7px;margin-top:10px;justify-content:center}
 .chip{border:1.5px solid var(--line);background:#fff;border-radius:999px;padding:6px 13px;font-size:14.5px;font-weight:700;cursor:pointer;transition:all .15s}
@@ -170,7 +178,8 @@ a{color:var(--teal-d)}
 /* animation player */
 .player{background:linear-gradient(180deg,#F4FAF7,#fff);border:1px solid var(--line);border-radius:24px;padding:12px;margin-bottom:14px}
 .player .screen{border-radius:16px;overflow:hidden;background:var(--cream);position:relative}
-.player .screen svg{display:block;width:100%;height:auto}
+.player .screen svg,
+.player .screen img.gi{display:block;width:100%;height:auto}
 .player .ctrl{display:flex;align-items:center;gap:8px;margin-top:10px;flex-wrap:wrap}
 .player .ctrl .btn{padding:8px 14px;min-height:40px;font-size:14.5px}
 .player .dots{display:flex;gap:5px;flex:1;justify-content:center;flex-wrap:wrap}
@@ -251,7 +260,8 @@ textarea.inp{min-height:110px;resize:vertical;line-height:1.5}
 .order .slot.over{border-color:var(--teal);background:#fff}
 .order .pool{display:flex;flex-wrap:wrap;gap:8px;min-height:60px}
 .ocard{flex:1 1 120px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;background:#fff;border:2px solid var(--line);border-radius:14px;padding:8px 8px;cursor:grab;font-weight:700;font-size:15px;text-align:center;min-height:88px;width:100%;transition:border-color .15s,background .15s,transform .15s;touch-action:none;user-select:none}
-.ocard svg{width:46px;height:46px}
+.ocard svg,
+.ocard img.gi{width:46px;height:46px}
 .ocard:hover{border-color:var(--teal)}
 .ocard.dragging{opacity:.5}
 .ocard.right{border-color:var(--ok);background:var(--okbg)}
@@ -276,14 +286,16 @@ textarea.inp{min-height:110px;resize:vertical;line-height:1.5}
 .mi.right{border-color:var(--ok);background:var(--okbg)}
 .mi.right .tag{background:var(--ok)}
 .mi.wrong{border-color:#E5B3A5;background:var(--nobg);animation:shake .4s}
-.mi svg{width:34px;height:34px;flex:none}
-@media (max-width:560px){.match{grid-template-columns:1fr 1fr;gap:10px}.mi{font-size:14.5px;padding:8px 9px;gap:6px}.mi svg{width:26px;height:26px}}
+.mi svg,
+.mi img.gi{width:34px;height:34px;flex:none}
+@media (max-width:560px){.match{grid-template-columns:1fr 1fr;gap:10px}.mi{font-size:14.5px;padding:8px 9px;gap:6px}.mi svg,.mi img.gi{width:26px;height:26px}}
 
 /* sort columns */
 .sortgrid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
 .sortcol{background:var(--cream);border-radius:18px;padding:12px;min-height:140px}
 .sortcol h5{margin:0 0 8px;font-family:var(--serif);font-size:18px;display:flex;gap:8px;align-items:center}
-.sortcol h5 svg{width:30px;height:30px}
+.sortcol h5 svg,
+.sortcol h5 img.gi{width:30px;height:30px}
 .sitem{display:flex;gap:8px;align-items:center;justify-content:space-between;background:#fff;border:2px solid var(--line);border-radius:14px;padding:9px 12px;margin-bottom:8px;font-weight:700;font-size:15.5px}
 .sitem .sb{display:flex;gap:5px;flex:none}
 .sitem .sb button{border:1.5px solid var(--line);background:#fff;border-radius:10px;padding:5px 9px;font-size:13px;font-weight:700;cursor:pointer}
@@ -301,7 +313,8 @@ textarea.inp{min-height:110px;resize:vertical;line-height:1.5}
 
 /* think */
 .think .qbox{background:linear-gradient(135deg,var(--blue),#EAF6F3);border-radius:22px;padding:20px 22px;margin-bottom:16px;display:flex;gap:14px;align-items:flex-start}
-.think .qbox svg{width:52px;height:52px;flex:none}
+.think .qbox svg,
+.think .qbox img.gi{width:52px;height:52px;flex:none}
 .think .qbox p{font-family:var(--serif);font-size:clamp(20px,2.4vw,25px);line-height:1.3;margin:0}
 .answer{background:var(--okbg);border-radius:18px;padding:16px 18px;margin-top:14px;animation:fadeup .4s}
 .answer h4{font-size:18px;color:#145C3D;margin-bottom:4px}
@@ -310,7 +323,8 @@ textarea.inp{min-height:110px;resize:vertical;line-height:1.5}
 
 /* memory */
 .mission{background:linear-gradient(160deg,#27343A,#33464D);color:#fff;border-radius:24px;padding:20px 22px;margin-bottom:16px;display:flex;gap:16px;align-items:center}
-.mission svg{width:58px;height:58px;flex:none}
+.mission svg,
+.mission img.gi{width:58px;height:58px;flex:none}
 .mission h3{color:#fff;font-size:24px;margin:0 0 3px}
 .mission p{margin:0;color:#D9E4E1;font-size:16px}
 .keyideas{list-style:none;padding:0;margin:10px 0}
@@ -322,10 +336,12 @@ textarea.inp{min-height:110px;resize:vertical;line-height:1.5}
 /* coins */
 .coinfly{position:fixed;z-index:100;pointer-events:none;width:34px;height:34px;transition:transform .9s cubic-bezier(.5,-0.2,.4,1),opacity .9s}
 .award{display:flex;align-items:center;gap:12px;background:#FFF9E8;border:1px solid #F1DFA6;border-radius:16px;padding:10px 16px;margin:12px 0;font-weight:700;animation:fadeup .4s}
-.award svg{width:32px;height:32px}
+.award svg,
+.award img.gi{width:32px;height:32px}
 .toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%) translateY(20px);background:var(--ink);color:#fff;padding:12px 20px 12px 12px;border-radius:999px;display:flex;align-items:center;gap:10px;font-weight:700;box-shadow:var(--sh2);opacity:0;transition:all .35s;z-index:90;pointer-events:none}
 .toast.show{opacity:1;transform:translateX(-50%)}
-.toast svg{width:30px;height:30px}
+.toast svg,
+.toast img.gi{width:30px;height:30px}
 
 /* completion */
 .complete{text-align:center;padding:16px 0}
@@ -333,7 +349,8 @@ textarea.inp{min-height:110px;resize:vertical;line-height:1.5}
 .complete .big{width:110px;height:110px;margin:0 auto 10px}
 .coinrow{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin:16px 0}
 .coinrow div{background:var(--cream);border-radius:16px;padding:10px 16px;font-weight:700;display:flex;gap:8px;align-items:center}
-.coinrow svg{width:24px;height:24px}
+.coinrow svg,
+.coinrow img.gi{width:24px;height:24px}
 .deeper{text-align:left;background:var(--cream);border-radius:20px;padding:16px 20px;margin:20px auto 0;max-width:680px}
 .deeper summary{cursor:pointer;font-weight:700;font-family:var(--serif);font-size:19px}
 .deeper ol{margin:10px 0 0;padding-left:22px}
@@ -343,7 +360,8 @@ textarea.inp{min-height:110px;resize:vertical;line-height:1.5}
 .pagehead{padding:30px 0 10px}
 .pagehead h1{font-size:clamp(32px,4.6vw,50px)}
 .bigcoin{display:flex;gap:22px;align-items:center;background:#fff;border-radius:30px;padding:26px;box-shadow:var(--sh);margin-bottom:18px;flex-wrap:wrap}
-.bigcoin svg{width:96px;height:96px}
+.bigcoin svg,
+.bigcoin img.gi{width:96px;height:96px}
 .bigcoin b{font-family:var(--serif);font-size:64px;line-height:1}
 .grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
 @media (max-width:820px){.grid4{grid-template-columns:repeat(2,1fr)}}
@@ -361,7 +379,8 @@ textarea.inp{min-height:110px;resize:vertical;line-height:1.5}
 .concepts{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:14px}
 .concept{background:#fff;border-radius:22px;padding:16px;box-shadow:var(--sh);display:flex;flex-direction:column;gap:8px}
 .concept .top2{display:flex;gap:12px;align-items:center}
-.concept .top2 svg{width:46px;height:46px}
+.concept .top2 svg,
+.concept .top2 img.gi{width:46px;height:46px}
 .concept h4{margin:0;font-size:18px}
 .meter{height:8px;border-radius:8px;background:#EEF1EE;overflow:hidden}
 .meter i{display:block;height:100%;background:var(--teal);border-radius:8px}
@@ -385,7 +404,8 @@ textarea.inp{min-height:110px;resize:vertical;line-height:1.5}
 .pcard b{font-family:var(--serif);font-size:26px}
 .approach{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:14px;margin:16px 0}
 .acard{background:var(--cream);border-radius:22px;padding:18px}
-.acard svg{width:54px;height:54px;margin-bottom:6px}
+.acard svg,
+.acard img.gi{width:54px;height:54px;margin-bottom:6px}
 .acard h4{font-size:19px;margin:0 0 4px}
 .acard p{font-size:16px!important;margin:0}
 .advlist{display:grid;gap:12px;margin:14px 0}
@@ -432,10 +452,11 @@ footer{padding:30px 0 40px;color:var(--ink2);font-size:14.5px;text-align:center}
 .tst b{display:block;font-size:14.5px}
 .tst small{color:var(--ink2);font-size:13px;font-weight:700}
 .tcard{background:var(--cream);border-radius:22px;padding:16px;margin-top:6px;display:grid;grid-template-columns:200px 1fr;gap:18px;align-items:center;animation:fadeup .4s}
-.tcard svg{width:100%;height:auto}
+.tcard svg,
+.tcard img.gi{width:100%;height:auto}
 .tcard h4{font-size:22px;margin:0 0 4px}
 .tcard .date{display:inline-block;background:var(--yellow);border-radius:999px;padding:2px 12px;font-weight:700;font-size:14px;margin-bottom:8px}
-@media (max-width:640px){.tcard{grid-template-columns:1fr}.tcard svg{max-width:240px;margin:0 auto}}
+@media (max-width:640px){.tcard{grid-template-columns:1fr}.tcard svg,.tcard img.gi{max-width:240px;margin:0 auto}}
 .tanim .ta{animation:fadeup .8s ease both}
 .tanim .ta2{animation:fadeup .8s .5s ease both}
 .tanim .ta3{animation:fadeup .8s 1s ease both}
@@ -450,7 +471,8 @@ footer{padding:30px 0 40px;color:var(--ink2);font-size:14.5px;text-align:center}
 .bitem{background:#fff;border-radius:16px;padding:10px;text-align:center;border:2px solid transparent;cursor:pointer;font-weight:700;font-size:14px;box-shadow:0 3px 0 rgba(0,0,0,.06);transition:transform .2s}
 .bitem:hover{transform:translateY(-3px) rotate(-1deg)}
 .bitem[aria-pressed="true"]{border-color:var(--teal)}
-.bitem svg{width:56px;height:56px;display:block;margin:0 auto 4px}
+.bitem svg,
+.bitem img.gi{width:56px;height:56px;display:block;margin:0 auto 4px}
 
 .mini-q{background:var(--cream);border-radius:20px;padding:16px 18px;margin-bottom:14px}
 .mini-q h4{font-size:19px;margin:0 0 8px}
@@ -476,13 +498,33 @@ body.calm *,body.calm *::before,body.calm *::after{animation-duration:.001ms!imp
 .static #sig1,.static #sig2,.static #sig3,.static #ouch,.static #cg{display:none}
 
 
-.player .screen svg{max-height:min(470px,62vh);margin:0 auto}
-.panel>svg,.panel .hs>svg,.tp .panel svg{max-height:500px;margin:0 auto}
-.info svg{max-height:420px}
+.player .screen svg,
+
+
+.player .screen img.gi{max-height:min(470px,62vh);margin:0 auto}
+.panel>svg,.panel .hs>svg,.tp .panel svg,
+.panel>img.gi,.panel .hs>img.gi,.tp .panel img.gi{max-height:500px;margin:0 auto}
+.info svg,
+.info img.gi{max-height:420px}
 
 .nav button{white-space:nowrap}
 @media (max-width:380px){.nav button{padding:8px 6px;font-size:13.5px}.coinpill{padding:4px 9px 4px 4px}}
 .pcard b{display:block;line-height:1.2}
+
+/* generated illustrations */
+.gi{display:block;max-width:100%;height:auto}
+.gi.ico{display:inline-block;border-radius:22%;object-fit:contain}
+.gi.scan{background:#000;border-radius:12px}
+.panel img.gi:not(.ico),.tp .panel img.gi:not(.ico){max-height:500px;width:auto;max-width:100%;margin:0 auto}
+.hstack{position:relative}
+.hstack .gi{width:100%;max-height:560px;object-fit:contain;margin:0 auto;transition:opacity .4s}
+.hstack .hsys{position:absolute;inset:0;height:100%;max-height:none;opacity:0;pointer-events:none}
+.heroart.focus .hstack .hbase{opacity:0}
+.heroart.focus .hstack .hsys.hl{opacity:1}
+.pinimg{position:relative;max-width:460px;margin:0 auto}
+.pinimg img.gi{width:100%;max-height:none}
+.pinimg svg{position:absolute;inset:0;width:100%;height:100%}
+.tcard img.gi{width:100%;border-radius:14px}
 </style>
 </head>
 <body>
@@ -929,9 +971,10 @@ const I = {
   hands:`<path d="M12 50 Q10 30 22 28 L22 14 Q22 10 26 10 Q30 10 30 14 V30 M30 26 V10 Q30 6 34 6 Q38 6 38 10 V28 M38 24 V12 Q38 8 42 8 Q46 8 46 12 V36 Q50 30 54 32 Q56 34 52 42 Q44 58 30 58 Q16 58 12 50Z" fill="#F7E5D8" stroke="#D3A68C" stroke-width="2" stroke-linejoin="round"/>`,
   hist:`<circle cx="32" cy="32" r="26" fill="#FDF3D6" stroke="#C9A443" stroke-width="2.5"/><path d="M32 14 V32 L20 40" stroke="#27343A" stroke-width="3" fill="none" stroke-linecap="round"/><path d="M8 32 H14 M50 32 H56 M32 8 V12 M32 52 V56" stroke="#C9A443" stroke-width="2"/>`,
 };
-const icon = (k, label='') => `<svg viewBox="0 0 64 64" ${label?`role="img" aria-label="${label}"`:'aria-hidden="true"'} xmlns="http://www.w3.org/2000/svg">${I[k]}</svg>`;
-const coinSVG = (lbl) => `<svg viewBox="0 0 40 40" ${lbl?`role="img" aria-label="${lbl}"`:'aria-hidden="true"'}><circle cx="20" cy="21" r="17" fill="#B9861C"/><circle cx="20" cy="19" r="17" fill="url(#gCoin)"/><circle cx="20" cy="19" r="12.5" fill="none" stroke="#C99A2E" stroke-width="1.4"/><path d="M15 25 V13 h6 a3.2 3.2 0 0 1 0 6.2 h-6 h6.6 a3.2 3.2 0 0 1 0 6.3Z" fill="none" stroke="#A7761A" stroke-width="2" stroke-linejoin="round"/><ellipse cx="14" cy="12" rx="4" ry="2.2" fill="#fff" opacity=".55" transform="rotate(-30 14 12)"/></svg>`;
-const logoSVG = () => `<svg viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="30" fill="#159E93"/><circle cx="32" cy="18" r="6" fill="#FAF8F2"/><path d="M22 28 Q32 24 42 28 L43 42 L37 42 L36 56 L28 56 L27 42 L21 42Z" fill="#FAF8F2"/><path d="M34 31 Q37 30 37 33 Q36 36 34 36 Q32 35 31 33 Q31 30 34 31Z" fill="#F3A69B"/></svg>`;
+const GI = (k, alt='', cls='') => `<img class="gi ${cls}" src="img/${k}.webp" ${alt?`alt="${alt}"`:'alt="" aria-hidden="true"'} decoding="async">`;
+const icon = (k, label='') => GI('icon-'+k, label, 'ico');
+const coinSVG = (lbl) => GI('icon-coin', lbl||'', 'ico');
+const logoSVG = () => GI('icon-logo', '', 'ico');
 
 /* timeline station art (160x120) */
 const TL = {
@@ -961,9 +1004,17 @@ const TL = {
    'An X-ray diffraction pattern shaped like an X beside a DNA double helix'),
 };
 
+Object.assign(TL, {
+  egypt: () => GI('tl_egypt','Ancient Egyptian papyrus with symbols, including a heart, and three canopic jars that held preserved organs'),
+  greek: () => GI('tl_greek','An ancient Greek physician holding a scroll in front of classical columns'),
+  vesalius: () => GI('tl_vesalius','An open Renaissance anatomy book with careful drawings of the human body and organs'),
+  leeuwen: () => GI('tl_leeuwen','An early brass single-lens microscope beside a circle showing tiny living organisms'),
+  dna: () => GI('tl_dna','An X-ray diffraction pattern shaped like an X beside a DNA double helix') });
+
 /* ===== Animations: each is an SVG plus a list of steps =====
    step: { t: caption, s: small note, on:[ids], off:[ids], past:[ids], d: ms } */
-const nest = (s,x,y,w,h) => s.replace(/role="img" aria-label="[^"]*"/,'aria-hidden="true"').replace('<svg ', `<svg x="${x}" y="${y}" width="${w}" height="${h}" `);
+const nest = (s,x,y,w,h) => s.trim().startsWith('<img') ? `<image href="${s.match(/src="([^"]+)"/)[1]}" x="${x}" y="${y}" width="${w}" height="${h}" preserveAspectRatio="xMidYMid meet"/>`
+  : s.replace(/role="img" aria-label="[^"]*"/,'aria-hidden="true"').replace('<svg ', `<svg x="${x}" y="${y}" width="${w}" height="${h}" `);
 const mv = (path, dur=2, rep=false, extra='') => `<animateMotion path="${path}" dur="${dur}s" begin="indefinite" fill="freeze" ${rep?'repeatCount="indefinite"':''} ${extra}/>`;
 const T = (x,y,t,size=12,anchor='middle',cls='svgl') => `<text x="${x}" y="${y}" text-anchor="${anchor}" class="${cls}" font-size="${size}">${t}</text>`;
 const pill = (x,y,t,w) => `<rect x="${x-w/2}" y="${y-14}" width="${w}" height="22" rx="11" fill="#fff" stroke="#CBE7DF"/>${T(x,y+1,t,11.5)}`;
@@ -1002,19 +1053,19 @@ function hexCells(cx,cy,R,rows,cols,fill,stroke,nuc){ let s=''; const w=R*1.732;
 ANIM.zoom = () => ({ title:'The great zoom: from body to atoms', vb:'0 0 400 260',
   label:'Animation zooming from the whole human body into the skin, skin cells, one cell, its nucleus, DNA, and finally the atoms that make DNA',
   svg:`<rect width="400" height="260" fill="#FAF8F2"/>
-   <g id="z1" class="scene">${nest(heroBody(),150,6,100,230)}<circle cx="233" cy="100" r="10" fill="none" stroke="#0E7A71" stroke-width="2.5"/>${pill(80,40,'Whole body · about 1.5 m',150)}</g>
+   <g id="z1" class="scene">${nest(GI('hero'),150,6,100,230)}<circle cx="233" cy="100" r="10" fill="none" stroke="#0E7A71" stroke-width="2.5"/>${pill(80,40,'Whole body · about 1.5 m',150)}</g>
    <g id="z2" class="scene"><rect x="40" y="30" width="320" height="200" rx="30" fill="#F4D9C8"/>
      ${Array.from({length:60},(_,i)=>`<path d="M${50+(i*53)%300} ${44+(i*37)%170} q8 -3 14 1" stroke="#E2B9A4" stroke-width="1.6" fill="none"/>`).join('')}
      ${Array.from({length:14},(_,i)=>`<circle cx="${70+(i*71)%270}" cy="${60+(i*43)%150}" r="2.4" fill="#D8A88F"/>`).join('')}
      <rect x="186" y="112" width="34" height="26" rx="4" fill="none" stroke="#0E7A71" stroke-width="2.5"/>${pill(110,248,'Skin surface · magnified about ×10',200)}</g>
    <g id="z3" class="scene"><rect x="20" y="20" width="360" height="220" rx="24" fill="#FBE3DA"/>${hexCells(46,44,22,6,9,'#F7D1C3','#E3A08E','#B07FB8')}
      <circle cx="214" cy="143" r="26" fill="none" stroke="#0E7A71" stroke-width="2.5"/>${pill(110,248,'Skin cells · about ×500',150)}</g>
-   <g id="z4" class="scene">${nest(animalCell(false),40,6,320,236)}<ellipse cx="203" cy="117" rx="48" ry="40" fill="none" stroke="#0E7A71" stroke-width="2.5" stroke-dasharray="6 4"/>${pill(100,248,'One cell · about ×2,000',150)}</g>
+   <g id="z4" class="scene">${nest(GI('cell'),40,6,320,236)}<ellipse cx="203" cy="117" rx="48" ry="40" fill="none" stroke="#0E7A71" stroke-width="2.5" stroke-dasharray="6 4"/>${pill(100,248,'One cell · about ×2,000',150)}</g>
    <g id="z5" class="scene"><ellipse cx="200" cy="128" rx="170" ry="112" fill="url(#gNuc)" stroke="#7A5EAA" stroke-width="4"/><circle cx="250" cy="100" r="30" fill="#6F539F"/>
      <path d="M70 120 q20 -30 40 0 t40 0 t40 10 t40 -10 M90 160 q16 20 32 0 t32 0 t32 -10 t40 10 M120 80 q14 -20 28 0 t28 6 M220 170 q14 16 28 0 t28 0 t26 -6" stroke="#4D3577" stroke-width="3" fill="none" stroke-linecap="round"/>
      <rect x="150" y="146" width="40" height="30" rx="5" fill="none" stroke="#FAF8F2" stroke-width="2.5"/>${pill(120,248,'Inside the nucleus · about ×10,000',210)}</g>
    <g id="z6" class="scene"><g transform="rotate(-90 200 128)">${helix(200,-20,296,46,2.3,{sw:6,rw:5})}</g><rect x="176" y="100" width="40" height="50" rx="6" fill="none" stroke="#0E7A71" stroke-width="2.5"/>${pill(110,248,'DNA · about ×1,000,000',170)}</g>
-   <g id="z7" class="scene">${nest(moleculeArt(),40,20,320,180)}${pill(130,248,'Atoms in a DNA building block · ×10,000,000+',260)}</g>`,
+   <g id="z7" class="scene">${nest(GI('molecule'),40,20,320,180)}${pill(130,248,'Atoms in a DNA building block · ×10,000,000+',260)}</g>`,
   steps:[
     {t:'Start with the whole human body.', on:['z1']},
     {t:'Zoom in towards the skin on the arm.', s:'Even skin that looks smooth has tiny lines and pores.', on:['z2'], past:['z1']},
@@ -1029,11 +1080,11 @@ ANIM.zoom = () => ({ title:'The great zoom: from body to atoms', vb:'0 0 400 260
 ANIM.levels = () => ({ title:'Building up: cell to organ system', vb:'0 0 400 270',
   label:'Animation: one heart muscle cell, then many cells forming muscle tissue, then the tissue as part of the heart, then the heart in the circulatory system, then the whole body',
   svg:`<rect width="400" height="270" fill="#FAF8F2"/>
-   <g id="l1" class="scene zo">${nest(cardiacCell(),90,40,220,130)}</g>
-   <g id="l2" class="scene zo">${nest(cardiacTissue(),80,20,240,160)}</g>
-   <g id="l3" class="scene zo">${nest(heartArt(),130,8,140,170)}<circle cx="232" cy="120" r="14" fill="none" stroke="#0E7A71" stroke-width="2.5"/></g>
-   <g id="l4" class="scene zo">${nest(circulatoryBody(),160,4,80,190)}</g>
-   <g id="l5" class="scene zo">${nest(heroBody(),160,4,80,190)}</g>
+   <g id="l1" class="scene zo">${nest(GI('cardiaccell'),90,40,220,130)}</g>
+   <g id="l2" class="scene zo">${nest(GI('cardiactissue'),80,20,240,160)}</g>
+   <g id="l3" class="scene zo">${nest(GI('heart'),130,8,140,170)}<circle cx="232" cy="120" r="14" fill="none" stroke="#0E7A71" stroke-width="2.5"/></g>
+   <g id="l4" class="scene zo">${nest(GI('circ'),160,4,80,190)}</g>
+   <g id="l5" class="scene zo">${nest(GI('hero'),160,4,80,190)}</g>
    <g transform="translate(0 214)">
     ${['Cell','Tissue','Organ','Organ system','Body'].map((n,i)=>`<g id="lb${i}" class="a"><rect x="${8+i*78}" y="6" width="72" height="34" rx="17" fill="${i===4?'#27343A':'#0E7A71'}"/>${T(44+i*78,28,n,11.5).replace('class="svgl"','class="svgw"')}</g>${i<4?`<path d="M${80+i*78} 23 h6" stroke="#0E7A71" stroke-width="2"/>`:''}`).join('')}</g>`,
   steps:[
@@ -1244,7 +1295,7 @@ ANIM.xray = () => { // landing points on simulated hand (nested at 100,64 scale 
    <g>${nest(svgWrap('0 0 200 260', xrayHand().replace('fill="#0E1417"','fill="#C9D3D6"').replace(/url\(#gSoft\)/,'#F1D7C6').replace(/#7D898F/g,'#F1D7C6').replace(/#6E7A80/g,'#F1D7C6').replace(/opacity="\.55"/g,'opacity="1"').replace(/opacity="\.5"/g,'opacity="1"').replace('filter="url(#blur2)" opacity=".9"','').replace(/#EEF3F5/g,'#F3E6D2').replace(/#E3EAED/g,'#F3E6D2'),''),100,64,160,208)}</g>
    ${beams(emptyP.concat(softP),'#7FB3E3','bs')}${beams(boneP,'#7FB3E3','bb')}
    <g id="abs" class="a">${boneP.map(([x,y])=>`<circle cx="${x}" cy="${y}" r="5" fill="#F4CE70" stroke="#C99520" class="glow on"/>`).join('')}</g>
-   <g id="img" class="a">${nest(xrayArt(),100,64,160,208)}</g>
+   <g id="img" class="a">${nest(GI('xray','','scan'),100,64,160,208)}</g>
    <g id="l1" class="a">${T(52,150,'Bone',12)}${T(52,164,'absorbs',11)}${T(52,177,'more X-rays',11)}<path d="M80 160 L150 176" stroke="#7C8A8F"/></g>`,
   steps:[
     {t:'An X-ray machine sends out X-rays.', s:'X-rays are a form of electromagnetic radiation. We cannot see them.', d:2600},
@@ -1259,7 +1310,7 @@ ANIM.ct = () => ({ title:'How a CT scanner builds slices', vb:'0 0 360 230',
    <g id="rot" class="a spin" style="transform-origin:110px 112px;transform-box:view-box"><rect x="98" y="24" width="24" height="16" rx="4" fill="#4E6369"/><path d="M110 40 L64 186 Q110 204 156 186Z" fill="#7FB3E3" opacity=".35"/><path d="M60 192 Q110 212 160 192" stroke="#27343A" stroke-width="6" fill="none" stroke-linecap="round"/></g>
    <path id="dl" class="a draw" pathLength="1" d="M204 112 C230 112 230 84 252 84" stroke="#0E7A71" stroke-width="3" fill="none" stroke-dasharray="1" marker-end="url(#arwT)"/>
    <rect x="250" y="36" width="104" height="96" rx="8" fill="#27343A"/><rect x="246" y="132" width="112" height="8" rx="3" fill="#4E6369"/>
-   <g id="sl" class="a">${nest(ctArt(),256,42,92,84)}</g>
+   <g id="sl" class="a">${nest(GI('ct','','scan'),256,42,92,84)}</g>
    <g id="stk" class="a">${[0,1,2].map(i=>`<ellipse cx="${300+i*6}" cy="${178-i*10}" rx="40" ry="11" fill="${['#9AA5AA','#B5BFC3','#CDD5D8'][i]}" stroke="#7C8A8F"/>`).join('')}${T(302,214,'Many slices',11)}</g>
    ${T(302,26,'Computer',11.5)}`,
   steps:[
@@ -1277,7 +1328,7 @@ ANIM.mri = () => ({ title:'How an MRI scanner makes pictures', vb:'0 0 360 230',
    <g id="rw" class="a">${[0,1,2].map(i=>`<path class="wave on" style="animation-delay:${i*0.5}s" d="M64 86 q8 -10 16 0" stroke="#E2574C" stroke-width="2.5" fill="none"/>`).join('')}${T(34,24,'Radio waves',11,'start')}</g>
    <g id="sig" class="a"><path class="flow" d="M72 104 C140 60 200 60 250 80" stroke="#F4CE70" stroke-width="3" fill="none"/>${T(196,200,'Signals from the body',11)}</g>
    <rect x="250" y="40" width="104" height="96" rx="8" fill="#27343A"/><rect x="246" y="136" width="112" height="8" rx="3" fill="#4E6369"/>
-   <g>${nest(mriArt(),256,46,92,84)}<rect id="cov" data-to="translate(0px,-90px) scaleY(0)" style="transform-origin:302px 46px" x="256" y="46" width="92" height="84" fill="#27343A"/></g>${T(302,30,'Computer',11.5)}`,
+   <g>${nest(GI('mri','','scan'),256,46,92,84)}<rect id="cov" data-to="translate(0px,-90px) scaleY(0)" style="transform-origin:302px 46px" x="256" y="46" width="92" height="84" fill="#27343A"/></g>${T(302,30,'Computer',11.5)}`,
   steps:[
     {t:'The patient lies very still inside the MRI scanner.', s:'MRI scanners are noisy, but they do not use X-rays.', d:2600},
     {t:'A very strong magnet creates a magnetic field through the body.', on:['fld']},
@@ -1472,7 +1523,7 @@ function makePlayer(def){
 function hotspot(svgHtml, spots, intro){
   const keys=Object.keys(spots);
   const root=el(`<div class="panel hs">${svgHtml}<div class="chips" role="group" aria-label="Explore the diagram">${keys.map(k=>`<button class="chip" data-k="${k}" aria-pressed="false">${spots[k].t}</button>`).join('')}</div>
-    <div class="info" aria-live="polite">${intro||'Tap a label or part of the picture to find out more.'}</div></div>`);
+    <div class="info" aria-live="polite">${intro||'Tap a label to find out more.'}</div></div>`);
   function pick(k){ root.classList.add('focus'); $$('[data-hs]',root).forEach(n=>n.classList.toggle('hl', n.dataset.hs===k || (spots[k].also||[]).includes(n.dataset.hs)));
     $$('.chip',root).forEach(c=>c.setAttribute('aria-pressed', c.dataset.k===k)); $('.info',root).innerHTML=`<h4>${spots[k].t}</h4>${spots[k].d}`; }
   root.addEventListener('click', e=>{ const c=e.target.closest('.chip'); if(c) return pick(c.dataset.k); const n=e.target.closest('[data-hs]'); if(n){ const k=keys.find(k=>k===n.dataset.hs || (spots[k].also||[]).includes(n.dataset.hs)); if(k) pick(k); } });
@@ -1607,7 +1658,7 @@ function labelAct(cfg, onDone){ // cfg: {svg (with numbered pins), labels:[...] 
   const root=el(`<div class="labelwrap"><div class="panel">${cfg.svg}</div><div class="lm"></div></div>`);
   $('.lm',root).appendChild(matchAct({prompt:cfg.prompt||'Match each numbered pin to its label.', lt:'Pin', rt:'Label', pairs:cfg.labels.map((l,i)=>['Pin '+(i+1), l]), c:cfg.c, why:cfg.why}, onDone));
   return root; }
-const pins = (list) => list.map(([x,y,lx,ly],i)=>`${lx!==undefined?`<path d="M${x} ${y} L${lx} ${ly}" stroke="#27343A" stroke-width="1.5"/>`:''}<g><circle class="c" cx="${lx??x}" cy="${ly??y}" r="11" fill="#27343A" stroke="#fff" stroke-width="2.5"/><text x="${lx??x}" y="${(ly??y)+4.5}" text-anchor="middle" class="svgw" font-size="12.5">${i+1}</text></g>`).join('');
+const pins = (list, k=1) => list.map(([x,y,lx,ly],i)=>`${lx!==undefined?`<path d="M${x} ${y} L${lx} ${ly}" stroke="#27343A" stroke-width="${1.5*k}"/>`:''}<g><circle class="c" cx="${lx??x}" cy="${ly??y}" r="${11*k}" fill="#27343A" stroke="#fff" stroke-width="${2.5*k}"/><text x="${lx??x}" y="${(ly??y)+4.5*k}" text-anchor="middle" class="svgw" font-size="${12.5*k}">${i+1}</text></g>`).join('');
 
 /* ---------- memory missions ---------- */
 function recallSet(cfg, onAttempt){ // cfg.items: [{q, accept, answer, hint, c}]
@@ -1702,7 +1753,7 @@ function stageDiagram(items){
   const root=el(`<div class="panel"><div style="display:grid;grid-template-columns:repeat(2,1fr);gap:10px" class="sdg">${items.map((it,k)=>`<button class="bitem" data-k="${k}" aria-pressed="false" style="position:relative;padding:8px 6px">
      <div style="height:150px;display:grid;place-items:center">${it.art}</div><b style="display:block;font-size:13.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--teal-dd)">${it.t}</b><span style="font-size:12.5px;color:var(--ink2);font-weight:700">${it.ex}</span></button>`).join('')}</div>
     <div class="info" aria-live="polite">Tap each stage. Each level is built from the one before it.</div></div>`);
-  $$('.bitem svg',root).forEach(s=>{ s.style.maxHeight='146px'; s.style.width='100%'; });
+  $$('.bitem svg, .bitem img.gi',root).forEach(s=>{ s.style.maxHeight='146px'; s.style.height='146px'; s.style.width='100%'; s.style.objectFit='contain'; });
   root.addEventListener('click',e=>{ const b=e.target.closest('[data-k]'); if(!b) return; const it=items[+b.dataset.k]; $$('[data-k]',root).forEach(x=>x.setAttribute('aria-pressed',x===b)); $('.info',root).innerHTML=`<h4>${it.t}: ${it.ex}</h4>${it.d}`; });
   return root; }
 
@@ -1787,7 +1838,7 @@ const R = (q,accept,answer,c,hint,why) => ({type:'recall',q,accept,answer,c,hint
 
 LESSONS[1] = { d:1, adv:1, title:'What Is Your Body Made Of?', dur:'7 min', ic:'water', bg:'bg-blue', topic:'atoms',
   central:'The human body is made of chemical elements and contains a large amount of water.',
-  wake:{ curiosity:{ art:()=>bodyWith([], 'A human silhouette', `<g font-family="Fraunces,Georgia,serif" font-size="30" font-weight="600" fill="#0E7A71" opacity=".85"><text x="86" y="160">?</text><text x="104" y="236">?</text><text x="60" y="330">?</text><text x="124" y="380">?</text></g>`),
+  wake:{ curiosity:{ art:()=>GI('curious','A human silhouette with question marks inside'),
     q:{ q:'What do you think makes up most of your body?', opts:['Bones','Muscles','Water','Blood'], a:2, any:true, why:'Among these choices, the answer is <b>water</b>. About 60% of your body is water! Let’s discover what else you are made of.' } } },
   discover:{ lines:['Your body is made from <strong>chemical elements</strong>.','Chemical elements are the basic ingredients of matter.','The most abundant element in your body by mass is <strong>oxygen</strong>.','Your body also contains carbon, hydrogen, nitrogen, calcium and many other elements.','About <strong>60%</strong> of your body is water.','Water is made from <strong>hydrogen and oxygen</strong> atoms joined together.'],
     visual:()=>pieChart() },
@@ -1808,10 +1859,10 @@ LESSONS[2] = { d:2, adv:1, title:'From Atoms to Living Cells', dur:'7–8 min', 
     Y('Is water an element or a compound?',['An element','A compound'],1,'atoms','Water is a compound: it is made from two different elements, hydrogen and oxygen, joined together.','A compound contains two or more different elements joined together. What is water made from?') ] },
   discover:{ lines:['Imagine you could shrink yourself smaller and smaller.','Your body is made from tiny living units called <strong>cells</strong>.','Inside cells are many different <strong>molecules</strong>.','Molecules are made from <strong>atoms</strong> joined together.','One especially important molecule is <strong>DNA</strong>.','DNA carries biological instructions that help cells function and develop.'],
     visual:()=>zoomSeq([
-      {t:'Human body', scale:'about 1.5 metres tall', art:heroBody(), w:170, note:'Your whole body is made of trillions of cells.'},
-      {t:'Animal cell', scale:'about 0.02 mm across', art:animalCell(), note:'A typical animal cell has a thin <b>cell membrane</b> around the outside, jelly-like <b>cytoplasm</b> and a <b>nucleus</b>. Cells contain many kinds of molecule, such as water, proteins, fats and sugars.'},
-      {t:'DNA', scale:'about 0.000002 mm wide', art:dnaArt(), w:170, note:'Long molecules of DNA are kept inside the nucleus. DNA carries instructions, a bit like a recipe book for the cell.'},
-      {t:'Molecule', scale:'atoms are about 0.0000001 mm', art:moleculeArt()+atomLegend(), note:'Every molecule is made of atoms joined together. This model shows part of a DNA building block. Each ball is an atom.'} ]) },
+      {t:'Human body', scale:'about 1.5 metres tall', art:GI('hero','A human body'), w:170, note:'Your whole body is made of trillions of cells.'},
+      {t:'Animal cell', scale:'about 0.02 mm across', art:GI('cell','An animal cell with a membrane, cytoplasm and a nucleus'), note:'A typical animal cell has a thin <b>cell membrane</b> around the outside, jelly-like <b>cytoplasm</b> and a <b>nucleus</b>. Cells contain many kinds of molecule, such as water, proteins, fats and sugars.'},
+      {t:'DNA', scale:'about 0.000002 mm wide', art:GI('dna','A DNA double helix'), w:170, note:'Long molecules of DNA are kept inside the nucleus. DNA carries instructions, a bit like a recipe book for the cell.'},
+      {t:'Molecule', scale:'atoms are about 0.0000001 mm', art:GI('molecule','Ball-and-stick model of a DNA building block')+atomLegend(), note:'Every molecule is made of atoms joined together. This model shows part of a DNA building block. Each ball is an atom.'} ]) },
   watch:{ intro:'Take a journey from your whole body down to the atoms inside a DNA molecule. Notice how the magnification grows at each step.', anims:['zoom'] },
   think:[{ q:'Can a single atom do everything a living cell can do?', a:'No. A living cell contains many different structures and molecules working together to carry out life processes.', hint:'Think about how many different parts and molecules you saw inside the cell.', c:'atoms' }],
   play:[{ h:'Smallest to largest', type:'order', prompt:'Arrange the cards from <b>smallest</b> to <b>largest</b>. Tap or drag each card into a space.', ends:['Smallest','Largest'], c:'atoms',
@@ -1827,10 +1878,10 @@ LESSONS[3] = { d:3, adv:1, title:'Cells, Tissues, Organs and Systems', dur:'8 mi
     R('What are the body’s basic living units?',['cell'],'Cells','org','They have a membrane, cytoplasm and a nucleus.') ] },
   discover:{ lines:['Your body is organised into different levels.','<strong>Cells</strong> are the basic living units of your body.','Groups of similar cells working together form <strong>tissues</strong>.','Different tissues join together to make <strong>organs</strong>.','Organs work together in <strong>organ systems</strong>.','Your heart is an organ.','It works with blood vessels as part of your circulatory system.'],
     visual:()=>stageDiagram([
-      {t:'Cell', ex:'cardiac muscle cell', art:cardiacCell(), d:'A single heart muscle cell. It is long, striped and branched, with one nucleus. It can contract (shorten).'},
-      {t:'Tissue', ex:'cardiac muscle tissue', art:cardiacTissue(), d:'Many similar heart muscle cells joined together. They contract together, so the tissue can squeeze.'},
-      {t:'Organ', ex:'the heart', art:heartArt(), d:'The heart is made of several tissues: muscle tissue to pump, plus other tissues that support it and help coordinate its beat.'},
-      {t:'Organ system', ex:'circulatory system', art:circulatoryBody(), d:'The heart works with blood vessels (arteries, veins and capillaries) to move blood around the whole body.'} ]) },
+      {t:'Cell', ex:'cardiac muscle cell', art:GI('cardiaccell','A single cardiac muscle cell'), d:'A single heart muscle cell. It is long, striped and branched, with one nucleus. It can contract (shorten).'},
+      {t:'Tissue', ex:'cardiac muscle tissue', art:GI('cardiactissue','Cardiac muscle tissue'), d:'Many similar heart muscle cells joined together. They contract together, so the tissue can squeeze.'},
+      {t:'Organ', ex:'the heart', art:GI('heart','The human heart'), d:'The heart is made of several tissues: muscle tissue to pump, plus other tissues that support it and help coordinate its beat.'},
+      {t:'Organ system', ex:'circulatory system', art:GI('circ','The circulatory system'), d:'The heart works with blood vessels (arteries, veins and capillaries) to move blood around the whole body.'} ]) },
   watch:{ intro:'Watch the levels build up, using the heart as our example. This shows how the levels are organised, not how a heart grows.', anims:['levels'] },
   think:[{ q:'Why does your heart need different kinds of tissue?', a:'Different tissues perform different jobs. Muscle tissue helps the heart pump, while other tissues provide support and help coordinate its activity.', hint:'Think about different jobs: pumping, holding things together, controlling the beat…', c:'org' }],
   play:[{ h:'Match each example to its level', type:'match', lt:'Example', rt:'Level', c:'org', pairs:[['Muscle cell','Cell','cell'],['Muscle tissue','Tissue','tissue'],['Heart','Organ','heart'],['Circulatory system','Organ system','system']], why:'Each example belongs to one level of organisation.' }],
@@ -1867,7 +1918,7 @@ LESSONS[5] = { d:5, adv:2, title:'Your Brain and Nervous System', dur:'7–8 min
   discover:{ hook:'What happens when you accidentally touch something very hot?',
     lines:['Your <strong>nervous system</strong> is your body’s communication network.','It includes your <strong>brain</strong>, <strong>spinal cord</strong> and <strong>nerves</strong>.','Nerves carry electrical signals around your body.','Some signals bring information from your senses towards your brain and spinal cord.','Other signals carry instructions to muscles.','This helps you think, feel, move and react.'],
     visual:()=>tabsVisual([
-      {t:'Whole body', node:()=>hotspot(nervousBody(), {brain:{t:'Brain',d:'The control centre. It processes information from your senses, stores memories and sends instructions.'}, cord:{t:'Spinal cord',d:'A thick bundle of nerve cells running down inside your backbone. It links the brain to the rest of the body.'}, nerves:{t:'Nerves',d:'Branching pathways that carry electrical signals between the brain or spinal cord and every part of the body.'}})},
+      {t:'Whole body', node:()=>hotspot(GI('nervous','Human figure showing the brain, the spinal cord and nerves branching to the arms and legs'), {brain:{t:'Brain',d:'The control centre. It processes information from your senses, stores memories and sends instructions.'}, cord:{t:'Spinal cord',d:'A thick bundle of nerve cells running down inside your backbone. It links the brain to the rest of the body.'}, nerves:{t:'Nerves',d:'Branching pathways that carry electrical signals between the brain or spinal cord and every part of the body.'}})},
       {t:'Close-up: hand, arm and spinal cord', node:`<div class="panel static">${svgWrap(ANIM.reflex().vb, ANIM.reflex().svg, 'Close-up of a hand, arm and spinal cord. A yellow sensory nerve runs from the fingertip to the spinal cord, and a teal motor nerve runs from the spinal cord to the biceps muscle')}</div>`, d:'The <b>sensory nerve</b> (yellow) carries information from the skin. The <b>motor nerve</b> (teal) carries instructions to the muscle.'} ]) },
   watch:{ intro:'Watch what happens in the split second after your finger touches something hot.', anims:['reflex'] },
   think:[{ q:'Why is it important that nerve signals can travel quickly?', a:'Quick signals allow your body to respond rapidly, including when it needs to protect itself.', hint:'Think about the hot mug. What would happen if the signal were slow?', c:'nerv' }],
@@ -1880,11 +1931,11 @@ LESSONS[6] = { d:6, adv:2, title:'Lungs and Breathing', dur:'7–9 min', ic:'lun
   wake:{ qs:[ R('What carries signals around your body?',['nerve'],'Nerves','nerv','They branch all over the body like wires.'),
     Y('What is an organ system?',['A group of organs working together','A group of similar cells','One very large organ'],0,'org','For example, the heart and blood vessels form the circulatory system.') ] },
   discover:{ lines:['Your body needs <strong>oxygen</strong> to help cells release energy from food.','When you breathe in, air enters through your nose or mouth.','It travels down your <strong>windpipe</strong> and into your <strong>lungs</strong>.','Inside your lungs are millions of tiny air sacs called <strong>alveoli</strong>.','Oxygen moves from these air sacs into your blood.','<strong>Carbon dioxide</strong> moves from the blood into the lungs and leaves when you breathe out.'],
-    visual:()=>hotspot(lungsArt(true), {nose:{t:'Nose and mouth',d:'Air enters here. The nose warms, moistens and filters the air.'}, trachea:{t:'Windpipe (trachea)',d:'A tube held open by rings of cartilage. It carries air down to the lungs.'}, airways:{t:'Branching airways',d:'The windpipe splits into two bronchi, which branch again and again into smaller and smaller tubes.'}, lungs:{t:'Left and right lungs',d:'Two spongy organs in your chest. The left lung is a little smaller, leaving room for the heart.'}, alv:{t:'Air sacs (alveoli)',d:'Millions of tiny sacs at the ends of the airways, wrapped in capillaries. This is where gas exchange happens.'}}) },
+    visual:()=>hotspot(GI('lungs','The respiratory system: nose and mouth, windpipe, branching airways, two lungs and a magnified view of the air sacs'), {nose:{t:'Nose and mouth',d:'Air enters here. The nose warms, moistens and filters the air.'}, trachea:{t:'Windpipe (trachea)',d:'A tube held open by rings of cartilage. It carries air down to the lungs.'}, airways:{t:'Branching airways',d:'The windpipe splits into two bronchi, which branch again and again into smaller and smaller tubes.'}, lungs:{t:'Left and right lungs',d:'Two spongy organs in your chest. The left lung is a little smaller, leaving room for the heart.'}, alv:{t:'Air sacs (alveoli)',d:'Millions of tiny sacs at the ends of the airways, wrapped in capillaries. This is where gas exchange happens.'}}) },
   watch:{ intro:'Follow a breath of air all the way into your blood, and then back out again.', anims:['breath'] },
   think:[{ q:'Why do the lungs contain millions of tiny air sacs?', a:'They provide a very large surface area for oxygen and carbon dioxide to move between the air and blood.', hint:'Imagine flattening out all the walls of the air sacs. Would there be more space for gases to cross with one big balloon or millions of tiny ones?', c:'resp' }],
   play:[
-    { h:'Label the diagram', type:'label', c:'resp', labels:['Windpipe','Lungs','Air sacs'], svg:svgWrap('0 0 400 330', lungsArt(false,true,false).replace(/^<svg[^>]*>|<\/svg>$/g,'')+pins([[150,140],[206,236],[344,232]]), 'Unlabelled diagram of the respiratory system with three numbered pins: 1 on the windpipe, 2 on a lung, 3 on the magnified air sacs'), why:'1 is the windpipe, 2 is a lung, 3 shows the air sacs.' },
+    { h:'Label the diagram', type:'label', c:'resp', labels:['Windpipe','Lungs','Air sacs'], svg:`<div class="pinimg">${GI('lungs','Unlabelled diagram of the respiratory system with three numbered pins: 1 on the windpipe, 2 on a lung, 3 on the magnified air sacs')}<svg viewBox="0 0 1024 1024" aria-hidden="true">${pins([[428,440,300,470],[250,760],[860,330]],3)}</svg></div>`, why:'1 is the windpipe, 2 is a lung, 3 shows the air sacs.' },
     { h:'Fill in the gaps', type:'quiz', qs:[ Y('We breathe in air containing <span class="blank">______</span>.',['Oxygen','Carbon dioxide','Nitrogen only'],0,'resp','We need the oxygen in air for our cells.'), Y('Oxygen moves into the <span class="blank">______</span>.',['Blood','Stomach','Bones'],0,'resp','Oxygen moves from the air sacs into the blood in capillaries.'), Y('We breathe out <span class="blank">______</span>.',['Carbon dioxide','Only oxygen','Water only'],0,'resp','Carbon dioxide is a waste gas made by cells.') ] } ],
   memory:{ type:'explain', intro:'Close your eyes and picture the journey first.', q:'Explain the journey of oxygen from the air to the blood.', c:'resp',
     ideas:[['Air enters through the nose or mouth',['nose','mouth']],['It travels down the windpipe',['windpipe','trachea']],['It goes into the lungs',['lung','airway','bronch']],['It reaches the tiny air sacs (alveoli)',['air sac','alveol','sac']],['Oxygen moves into the blood',['blood','capillar']]],
@@ -1897,8 +1948,8 @@ LESSONS[7] = { d:7, adv:2, title:'Your Heart and Blood', dur:'8–9 min', ic:'he
     R('Where does oxygen enter the blood?',['lung','air sac','alveol'],'In the lungs (in the air sacs)','resp','Think about where the air sacs are.') ] },
   discover:{ lines:['Your heart is a powerful muscular organ.','It pumps blood through a network of blood vessels.','Blood delivers oxygen and nutrients to cells.','It also carries away waste substances.','<strong>Arteries</strong> carry blood away from the heart.','<strong>Veins</strong> carry blood towards the heart.','<strong>Capillaries</strong> are tiny blood vessels where substances can move between blood and body tissues.'],
     visual:()=>{ const t=tabsVisual([
-      {t:'The heart', node:()=>hotspot(heartArt(true), {v:{t:'Ventricles',d:'The two large lower chambers. Their thick muscular walls squeeze to pump blood out.'}, ra:{t:'Right atrium',d:'Receives oxygen-poor blood returning from the body.'}, la:{t:'Left atrium',d:'Receives oxygen-rich blood returning from the lungs.'}, ao:{t:'Aorta',d:'The largest artery. It carries oxygen-rich blood from the heart to the body.'}, pa:{t:'Pulmonary artery',d:'Carries oxygen-poor blood from the heart to the lungs.'}, vc:{t:'Vena cava',d:'Large veins bringing oxygen-poor blood back to the heart.'}}, 'Tap a part of the heart.')},
-      {t:'Circulatory system', node:()=>hotspot(circulatoryBody(), {heart:{t:'Heart',d:'The pump at the centre of the system, in your chest.'}, art:{t:'Arteries (red)',d:'Carry blood away from the heart to every part of the body.'}, vein:{t:'Veins (blue)',d:'Carry blood back towards the heart.'}}) } ]);
+      {t:'The heart', node:()=>hotspot(GI('heart','The human heart with its chambers, aorta, pulmonary artery and vena cava'), {v:{t:'Ventricles',d:'The two large lower chambers. Their thick muscular walls squeeze to pump blood out.'}, ra:{t:'Right atrium',d:'Receives oxygen-poor blood returning from the body.'}, la:{t:'Left atrium',d:'Receives oxygen-rich blood returning from the lungs.'}, ao:{t:'Aorta',d:'The largest artery. It carries oxygen-rich blood from the heart to the body.'}, pa:{t:'Pulmonary artery',d:'Carries oxygen-poor blood from the heart to the lungs.'}, vc:{t:'Vena cava',d:'Large veins bringing oxygen-poor blood back to the heart.'}}, 'Tap a label to explore the heart.')},
+      {t:'Circulatory system', node:()=>hotspot(GI('circ','Human figure showing the heart, red arteries and blue veins'), {heart:{t:'Heart',d:'The pump at the centre of the system, in your chest.'}, art:{t:'Arteries (red)',d:'Carry blood away from the heart to every part of the body.'}, vein:{t:'Veins (blue)',d:'Carry blood back towards the heart.'}}) } ]);
       t.appendChild(el(`<div class="callout"><b>About the colours:</b> diagrams use red for oxygen-rich blood and blue for oxygen-poor blood. Real blood is always a shade of red — bright red with lots of oxygen and darker red with less.</div>`)); return t; } },
   watch:{ intro:'Follow the blood’s route: heart → lungs → heart → body → heart.', anims:['circ'] },
   think:[{ q:'Why do your heart and lungs need to work together?', a:'The lungs bring oxygen into the blood, and the heart pumps blood around the body.', hint:'Which one collects the oxygen, and which one moves the blood?', c:'circ' }],
@@ -1914,7 +1965,7 @@ LESSONS[8] = { d:8, adv:2, title:'The Amazing Journey of Food', dur:'8–9 min',
     Y('What useful substances can blood carry?',['Oxygen and nutrients','Bones and muscles','Only water'],0,'circ','Blood delivers oxygen and nutrients to cells, and carries away waste.') ] },
   discover:{ hook:'How can an apple become part of your growing body?',
     lines:['Food contains <strong>nutrients</strong> your body needs.','Your <strong>digestive system</strong> breaks food into smaller substances.','Digestion begins in your mouth, where you chew food and mix it with saliva.','Food travels down the <strong>oesophagus</strong> into the <strong>stomach</strong>.','Digestion continues in the <strong>small intestine</strong>.','Most nutrients are absorbed through the small intestine into the blood.','The <strong>large intestine</strong> absorbs water from the remaining material.','Waste eventually leaves the body through the anus.'],
-    visual:()=>hotspot(digestiveArt(true), {mouth:{t:'Mouth',d:'Teeth chew food into small pieces, and saliva starts digestion.'}, oes:{t:'Oesophagus',d:'A muscular tube that squeezes food down to the stomach.'}, stom:{t:'Stomach',d:'A stretchy bag that churns food with acid and digestive juices.'}, small:{t:'Small intestine',d:'A long coiled tube (about 6 metres!). Digestion finishes here and most nutrients are absorbed into the blood.'}, large:{t:'Large intestine',d:'Wider but shorter. It absorbs water from the remaining material.'}, rect:{t:'Rectum',d:'Stores waste until it leaves the body.'}, anus:{t:'Anus',d:'The opening where waste leaves the body.'}}) },
+    visual:()=>hotspot(GI('digestive','The digestive system from the mouth, oesophagus and stomach to the small and large intestines, rectum and anus'), {mouth:{t:'Mouth',d:'Teeth chew food into small pieces, and saliva starts digestion.'}, oes:{t:'Oesophagus',d:'A muscular tube that squeezes food down to the stomach.'}, stom:{t:'Stomach',d:'A stretchy bag that churns food with acid and digestive juices.'}, small:{t:'Small intestine',d:'A long coiled tube (about 6 metres!). Digestion finishes here and most nutrients are absorbed into the blood.'}, large:{t:'Large intestine',d:'Wider but shorter. It absorbs water from the remaining material.'}, rect:{t:'Rectum',d:'Stores waste until it leaves the body.'}, anus:{t:'Anus',d:'The opening where waste leaves the body.'}}) },
   watch:{ intro:'Follow a piece of apple on its journey through the digestive system.', anims:['food'] },
   think:[{ q:'Why must food be broken into smaller substances?', a:'Many nutrients need to be broken into small enough molecules to pass through the intestinal lining and enter the body.', hint:'Could a whole piece of apple pass through the wall of the intestine into a tiny blood vessel?', c:'dig' }],
   play:[
@@ -1931,10 +1982,10 @@ LESSONS[9] = { d:9, adv:2, title:'Support, Movement and Protection', dur:'9–10
     Y('Where are most nutrients absorbed?',['Stomach','Small intestine','Large intestine'],1,'dig','The long, coiled small intestine absorbs most nutrients into the blood.') ] },
   discover:{ lines:['## Skeletal system','Your skeleton is a framework of bones.','It supports your body, protects delicate organs and works with muscles to help you move.','## Muscular system','Muscles <strong>contract</strong> to produce movement.','They help you walk, jump, smile and keep your heart beating.','## Immune system','Your immune system helps protect you against harmful germs.','<strong>White blood cells</strong> are important parts of this defence.','## Reproductive system','The reproductive system becomes more active as the body matures.','It produces reproductive cells that are involved in human reproduction.'],
     visual:()=>cardPicker([
-      {t:'Skeletal system', art:icon('bone'), big:skeleton(), bw:200, d:'About 206 bones in an adult. The skull protects the brain and the ribcage protects the heart and lungs.'},
-      {t:'Muscular system', art:icon('muscle'), big:muscularBody(), bw:200, d:'More than 600 muscles. Skeletal muscles pull on bones; heart muscle pumps blood.'},
-      {t:'Immune system', art:icon('shield'), big:wbcArt(), bw:300, d:'White blood cells find and destroy harmful bacteria and viruses.'},
-      {t:'Reproductive system', art:icon('egg'), big:reproCells(), bw:320, d:'Reproductive cells: an egg cell and a sperm cell. A new human life begins when these two cells join.'} ], 'bench', 'Tap a card to look closer at each system.') },
+      {t:'Skeletal system', art:icon('bone'), big:GI('skeleton','The human skeleton'), bw:200, d:'About 206 bones in an adult. The skull protects the brain and the ribcage protects the heart and lungs.'},
+      {t:'Muscular system', art:icon('muscle'), big:GI('muscles','The muscular system'), bw:200, d:'More than 600 muscles. Skeletal muscles pull on bones; heart muscle pumps blood.'},
+      {t:'Immune system', art:icon('shield'), big:GI('wbc','A white blood cell engulfing bacteria'), bw:300, d:'White blood cells find and destroy harmful bacteria and viruses.'},
+      {t:'Reproductive system', art:icon('egg'), big:GI('repro','An egg cell and a sperm cell'), bw:320, d:'Reproductive cells: an egg cell and a sperm cell. A new human life begins when these two cells join.'} ], 'bench', 'Tap a card to look closer at each system.') },
   watch:{ intro:'Two animations: how muscles move bones, and how a white blood cell defends you.', anims:['arm','phago'] },
   think:[{ q:'Could your skeleton move your arm without muscles?', a:'No. Muscles pull on bones to produce movement at joints.', hint:'Watch the arm animation again. What pulled the forearm up?', c:'move' }],
   play:[
@@ -1952,9 +2003,9 @@ LESSONS[10] = { d:10, adv:3, title:'X-rays, CT Scans and MRI', dur:'8–9 min', 
   discover:{ hook:'How can doctors see what is happening inside your body without opening it?',
     lines:['Doctors use special technologies to examine the inside of the body.','<strong>X-rays</strong> are a form of electromagnetic radiation.','Different tissues absorb X-rays differently, allowing bones to show up clearly.','<strong>CT scanners</strong> use X-ray measurements taken from different angles.','A computer combines the measurements to create detailed cross-sectional images.','<strong>MRI</strong> uses strong magnetic fields and radio waves to create detailed images, especially of soft tissues such as the brain.'],
     visual:()=>tabsVisual([
-      {t:'X-ray of a hand', node:`<div class="panel" style="max-width:300px;margin:0 auto">${xrayArt()}</div>`, d:'<b>X-ray.</b> Bones absorb more X-rays than soft tissues, so they appear bright white. Great for spotting broken bones. <i>Simulated illustration.</i>'},
-      {t:'CT of the abdomen', node:`<div class="panel" style="max-width:330px;margin:0 auto">${ctArt()}</div>`, d:'<b>CT cross-section.</b> Like looking at a slice through the body from below: you can see the spine, kidneys, liver and bowel. <i>Simulated illustration.</i>'},
-      {t:'MRI of the brain', node:`<div class="panel" style="max-width:330px;margin:0 auto">${mriArt()}</div>`, d:'<b>MRI.</b> Shows soft tissues in fine detail, such as the folds of the brain. <i>Simulated illustration.</i>'} ]) },
+      {t:'X-ray of a hand', node:`<div class="panel" style="max-width:300px;margin:0 auto">${GI('xray','Simulated X-ray of a hand','scan')}</div>`, d:'<b>X-ray.</b> Bones absorb more X-rays than soft tissues, so they appear bright white. Great for spotting broken bones. <i>Simulated illustration.</i>'},
+      {t:'CT of the abdomen', node:`<div class="panel" style="max-width:330px;margin:0 auto">${GI('ct','Simulated CT cross-section of the abdomen','scan')}</div>`, d:'<b>CT cross-section.</b> Like looking at a slice through the body from below: you can see the spine, kidneys, liver and bowel. <i>Simulated illustration.</i>'},
+      {t:'MRI of the brain', node:`<div class="panel" style="max-width:330px;margin:0 auto">${GI('mri','Simulated MRI of the brain','scan')}</div>`, d:'<b>MRI.</b> Shows soft tissues in fine detail, such as the folds of the brain. <i>Simulated illustration.</i>'} ]) },
   watch:{ intro:'Three short animations show how each machine works.', anims:['xray','ct','mri'] },
   think:[{ q:'Why might a doctor use MRI rather than a simple X-ray to examine the brain?', a:'MRI can show soft tissues, including brain structures, in greater detail.', hint:'What shows up clearly on an X-ray? Is the brain like that?', c:'img' }],
   play:[{ h:'Medical matching game', type:'match', lt:'Medical question', rt:'Best tool', c:'img', pairs:[['Suspected broken finger','X-ray','xray'],['Detailed cross-sectional images','CT'],['Detailed brain tissue images','MRI','brain']] }],
@@ -1968,7 +2019,7 @@ LESSONS[11] = { d:11, adv:3, title:'Ultrasound and Endoscopes', dur:'7–8 min',
   wake:{ qs:[ R('Which imaging method uses strong magnetic fields?',['=mri','magnetic resonance'],'MRI','img','Three letters, great for the brain.'),
     Y('Which method uses X-rays to produce cross-sectional images?',['CT','MRI','Ultrasound'],0,'img','CT combines X-ray measurements from many angles into slices.') ] },
   discover:{ lines:['<strong>Ultrasound</strong> uses high-frequency sound waves.','The sound waves travel into the body and bounce back from different tissues.','A computer uses the returning echoes to make pictures.','Doctors often use ultrasound to examine developing babies before birth and many other body structures.','An <strong>endoscope</strong> is a thin tube with a camera and light.','Doctors can guide it into the body to look directly at internal surfaces.'],
-    visual:()=>tabsVisual([{t:'Ultrasound', node:`<div class="panel">${ultrasoundArt()}</div>`, d:'The probe sends sound waves in and listens for the echoes. It is safe and painless.'},{t:'Endoscope', node:`<div class="panel">${endoscopeArt()}</div>`, d:'A flexible tube with a light and camera. The doctor sees the inside surface directly on a screen.'}]) },
+    visual:()=>tabsVisual([{t:'Ultrasound', node:`<div class="panel">${GI('ultrasound','A sonographer moves an ultrasound probe over a patient’s belly; the screen shows an image of a baby')}</div>`, d:'The probe sends sound waves in and listens for the echoes. It is safe and painless.'},{t:'Endoscope', node:`<div class="panel">${GI('endoscope','An endoscope tube passes through the mouth into the stomach; a screen shows the stomach lining')}</div>`, d:'A flexible tube with a light and camera. The doctor sees the inside surface directly on a screen.'}]) },
   watch:{ intro:'Watch both tools in action.', anims:['ultra','endo'] },
   think:[{ q:'Why might a doctor choose an endoscope to examine the stomach lining?', a:'An endoscope allows the doctor to see the internal surface directly.', hint:'Which tool gives a real camera picture of a surface?', c:'img' }],
   play:[{ h:'Interactive matching', type:'match', lt:'Clue', rt:'Tool', c:'img', pairs:[['Uses sound waves','Ultrasound'],['Uses a camera on a tube','Endoscope'],['Often used to examine a developing baby','Ultrasound']], why:'Ultrasound uses sound waves and is often used before birth; an endoscope uses a camera on a tube.' }],
@@ -1982,7 +2033,7 @@ LESSONS[12] = { d:12, adv:3, title:'Microscopes and the Invisible World', dur:'8
   wake:{ qs:[ Y('What does ultrasound use?',['Sound waves','X-rays','Magnets'],0,'img','High-frequency sound waves and their echoes.'),
     R('What does an endoscope have at its tip?',['camera'],'A camera and a light','img','It lets the doctor see inside.') ] },
   discover:{ lines:['Your body contains trillions of cells.','Most cells are too small to see clearly without a microscope.','A <strong>light microscope</strong> uses visible light and lenses to magnify tiny objects.','Scientists and doctors use light microscopes to examine cells and tissues.','<strong>Electron microscopes</strong> use electrons instead of light.','They can reveal much smaller details, including fine structures of bacteria and viruses.'],
-    visual:()=>{ const w=el(`<div></div>`); w.appendChild(panelArt(microscopesArt(),'Two kinds of microscope (not to scale)')); w.appendChild(el(`<div style="height:10px"></div>`)); w.appendChild(panelArt(scaleArt(),'Sizes are approximate')); return w; } },
+    visual:()=>{ const w=el(`<div></div>`); w.appendChild(panelArt(GI('microscopes','A light microscope beside a much larger electron microscope with a computer screen'),'Left: a light microscope. Right: an electron microscope (not to scale)')); w.appendChild(el(`<div style="height:10px"></div>`)); w.appendChild(panelArt(GI('scale','Scale comparison from largest to smallest: a tissue sample, a human cell, a bacterium and a virus'),'Sizes are approximate. A light microscope can show the first three; only an electron microscope can show viruses.')); return w; } },
   watch:{ intro:'Zoom from a slice of tissue into the invisible world of bacteria and viruses.', anims:['micro'] },
   think:[{ q:'Why do scientists need different types of microscopes?', a:'Different microscopes can reveal different levels of detail.', hint:'Could a light microscope show you the spikes on a virus?', c:'micro' }],
   play:[
@@ -2032,7 +2083,7 @@ LESSONS[14] = { d:14, adv:4, title:'The Great Body Explorer Challenge', dur:'10 
     { q:'How do the digestive and circulatory systems work together?', a:'The digestive system allows nutrients to be absorbed, and blood transports them around the body.', c:'dig', hint:'Where do nutrients go after the small intestine?' },
     { q:'Why do bones and muscles work together?', a:'Bones provide support and act as levers, while muscles pull to produce movement.', c:'move', hint:'Can muscles push? What do they pull on?' } ],
   play:[
-    { h:'Mission 1 — Build a Human', type:'order', prompt:'Arrange the levels from the <b>smallest</b> to the <b>largest</b>.', ends:['Smallest','Largest'], c:'org', items:[{label:'Atom',icon:'atom'},{label:'Molecule',icon:'molecule'},{label:'Cell',icon:'cell'},{label:'Tissue',icon:'tissue'},{label:'Organ',icon:'heart'},{label:'Organ system',icon:'system'}], why:'Atom → Molecule → Cell → Tissue → Organ → Organ system. And together, the systems make…', win:()=>`<div class="panel" style="max-width:220px;margin:12px auto 0;animation:zin .8s ease">${heroBody()}<div class="cap"><b>…a whole human body!</b></div></div>` },
+    { h:'Mission 1 — Build a Human', type:'order', prompt:'Arrange the levels from the <b>smallest</b> to the <b>largest</b>.', ends:['Smallest','Largest'], c:'org', items:[{label:'Atom',icon:'atom'},{label:'Molecule',icon:'molecule'},{label:'Cell',icon:'cell'},{label:'Tissue',icon:'tissue'},{label:'Organ',icon:'heart'},{label:'Organ system',icon:'system'}], why:'Atom → Molecule → Cell → Tissue → Organ → Organ system. And together, the systems make…', win:()=>`<div class="panel" style="max-width:220px;margin:12px auto 0;animation:zin .8s ease">${GI('hero','A whole human body')}<div class="cap"><b>…a whole human body!</b></div></div>` },
     { h:'Mission 2 — Body Systems Detective', type:'match', lt:'Body part', rt:'Job', c:'move', pairs:[['Heart','Pumps blood','heart'],['Lungs','Exchange gases','lungs'],['Brain','Helps control the body','brain'],['Digestive system','Breaks down food and absorbs nutrients','stomach'],['Immune system','Helps defend against harmful germs','shield']] },
     { h:'Mission 3 — Medical Mystery', type:'match', lt:'Mystery', rt:'Best tool', c:'img', pairs:[['Broken finger','X-ray','xray'],['Detailed brain tissue image','MRI','brain'],['Fine structure of a virus','Electron microscope','virus']] } ],
   memory:{ type:'explain', h:'Mission 5 — Rebuild the Big Picture', intro:'Everything is hidden. Show what you know!', q:'Describe the levels of body organisation, from atoms to organ systems, and give one example of how two systems work together.', c:'org',
@@ -2076,7 +2127,7 @@ function renderHome(){
     <p class="lead">“Your body is an extraordinary living system. Discover what it’s made of, how its parts work together, and how scientists explore its secrets.”</p>
     <div class="meta"><span>14 lessons</span><span>5–10 minutes a day</span><span>Ages 9–13</span></div>
     <div class="cta"><button class="btn btn-p" data-go="${nl?'day-'+nl:'day-1'}">${done===0&&!S.lessons[1]?'Start Exploring':nl?`Continue: Day ${nl} →`:'Explore again'}</button><button class="btn btn-s" data-go="parents">For Parents</button></div>
-    </div><div class="heroart" id="heroart">${heroBody()}<div class="legend" role="group" aria-label="Highlight a body system">
+    </div><div class="heroart" id="heroart"><div class="hstack">${GI('hero','Illustration of a human figure showing the brain and nerves, lungs, heart and arteries, veins, digestive organs, bones and muscles','hbase')}${[['nerv','nervous'],['lungs','lungsbody'],['heart','circ'],['veins','veins'],['dig','digbody'],['bones','skeleton'],['muscles','muscles']].map(([k,f])=>`<img class="gi hsys" data-sys="${k}" src="img/${f}.webp" alt="" aria-hidden="true" decoding="async">`).join('')}</div><div class="legend" role="group" aria-label="Highlight a body system">
       ${[['nerv','Brain and nerves','#EDB94A'],['lungs','Lungs','#F3A69B'],['heart','Heart and arteries','#C9433B'],['veins','Veins','#4A78BD'],['dig','Digestion','#F2B48A'],['bones','Bones','#E9DFC6'],['muscles','Muscles','#B5605A']].map(([k,n,c])=>`<button data-sys="${k}" aria-pressed="false"><i style="background:${c}"></i>${n}</button>`).join('')}</div></div></div></section>
   <section class="wrap"><div class="strip">
     <div class="stat">${coinSVG()}<div><b>${coinsTotal()}</b><small>coins earned of 210</small></div></div>
@@ -2090,7 +2141,7 @@ function renderHome(){
     <div class="adv"><h3 style="font-size:24px">How every lesson works</h3><div class="cards" style="grid-template-columns:repeat(auto-fill,minmax(160px,1fr))">${STAGES.map((s,i)=>`<div class="stat" style="flex-direction:column;align-items:flex-start;gap:6px">${icon(s.ic)}<b style="font-size:17px;font-family:var(--serif)">${i+1}. ${s.n}</b><small>${s.t.replace('About ','~')}</small></div>`).join('')}</div></div>
   </div></section>`;
   const ha=$('#heroart'); ha.addEventListener('click',e=>{ const b=e.target.closest('[data-sys]'); if(!b||!b.matches('button')) return; const on=b.getAttribute('aria-pressed')!=='true';
-    $$('.legend button',ha).forEach(x=>x.setAttribute('aria-pressed', on&&x===b)); ha.classList.toggle('focus', on); $$('.sys',ha).forEach(g=>g.classList.toggle('hl', on&&g.dataset.sys===b.dataset.sys)); });
+    $$('.legend button',ha).forEach(x=>x.setAttribute('aria-pressed', on&&x===b)); ha.classList.toggle('focus', on); $$('.hsys',ha).forEach(g=>g.classList.toggle('hl', on&&g.dataset.sys===b.dataset.sys)); });
 }
 
 /* ---------- lesson ---------- */
